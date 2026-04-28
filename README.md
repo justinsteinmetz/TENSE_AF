@@ -2,7 +2,7 @@
 
 Grammar as cognitive instrument. Commit-once decisions feed a groove engine that rewards steady thought and punishes reckless guessing.
 
-**Live:** https://justinsteinmetz.github.io/tense-af/
+**Live:** https://justinsteinmetz.github.io/TENSE_AF/
 
 ---
 
