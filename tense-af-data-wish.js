@@ -40,10 +40,10 @@ PACKS.push({
           qid: "ws-p01",
           pressureClass: "low",
           context: "She wishes she ___ into architecture — the decision was made at eighteen for practical reasons.",
-          text: "She wishes she ___ into something that didn't feel like surviving.",
-          answer: "had gone",
-          options: ["had gone", "went into architecture instead", "has been an architect", "is going into architecture now"],
-          afterflavour: "Had gone = wish + past perfect, present regret about past decision. Went into architecture = past simple, just states what happened — no unreal meaning. Has been an architect = present perfect, different meaning. Is going = present progressive, future. Wish + past perfect for past regret."
+          text: "She wishes she ___ a different path — this one has never felt like a real choice.",
+          answer: "had taken",
+          options: ["had taken", "took", "has taken", "would take"],
+          afterflavour: "Had taken = wish + past perfect, regret about a past decision already made. Took = past simple, what actually happened — no wish meaning. Has taken = present perfect, wrong frame. The decision was at eighteen: wish + past perfect."
         },
         {
           qid: "ws-p02",
