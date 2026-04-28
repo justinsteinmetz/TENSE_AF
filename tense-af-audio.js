@@ -453,44 +453,53 @@ class AudioEngine {
     if (!this.ctx || this.muted) return;
     const t = this.ctx.currentTime;
 
-    [0, 5].forEach((detuneHz, i) => {
+    // Total duration: 16s. Four octaves: A1 (55Hz) → A5 (880Hz).
+    // Low in the mix — sits underneath the groove, not over it.
+    const duration   = 16.0;   // full sweep duration
+    const fadeIn     = 1.2;    // slow fade in
+    const fadeOut    = 2.5;    // long tail
+    const holdEnd    = duration - fadeOut;
+    const peakGain   = 0.07;   // low in the mix
+    const stopTime   = t + duration + 0.5;
+
+    [0, 4].forEach((detuneHz, i) => {
       const osc    = this.ctx.createOscillator();
       const filter = this.ctx.createBiquadFilter();
       const lfo    = this.ctx.createOscillator();
       const lfoAmt = this.ctx.createGain();
       const g      = this.ctx.createGain();
 
-      // Sawtooth — has harmonics, has body. Not a sine.
+      // Sawtooth — harmonics give it body across the full range
       osc.type = 'sawtooth';
-      osc.frequency.setValueAtTime(110 + detuneHz, t);
-      osc.frequency.exponentialRampToValueAtTime(330 + detuneHz, t + 3.0);
+      osc.frequency.setValueAtTime(55 + detuneHz, t);
+      osc.frequency.exponentialRampToValueAtTime(880 + detuneHz, t + duration);
 
-      // Resonant lowpass — filter opens with the sweep, gives vowel quality
+      // Resonant lowpass tracks the sweep — filter opens as pitch climbs
       filter.type = 'lowpass';
-      filter.frequency.setValueAtTime(300, t);
-      filter.frequency.exponentialRampToValueAtTime(2200, t + 3.0);
-      filter.Q.value = 6;  // enough resonance to sing, not enough to scream
+      filter.frequency.setValueAtTime(150, t);
+      filter.frequency.exponentialRampToValueAtTime(3500, t + duration);
+      filter.Q.value = 5;
 
-      // LFO on frequency directly — slow wobble, ±4Hz
+      // Very slow LFO wobble — barely perceptible at this speed, adds life
       lfo.type = 'sine';
-      lfo.frequency.value = 3.2 + i * 0.4;  // slightly different rates per voice
-      lfoAmt.gain.value = 4;
+      lfo.frequency.value = 0.4 + i * 0.15;   // very slow — ~0.4Hz and 0.55Hz
+      lfoAmt.gain.value = 2.5;                  // ±2.5Hz modulation only
       lfo.connect(lfoAmt);
       lfoAmt.connect(osc.frequency);
 
-      // Envelope — fade in slow, hold, fade out
+      // Envelope — slow fade in, hold, long fade out
       g.gain.setValueAtTime(0, t);
-      g.gain.linearRampToValueAtTime(0.22, t + 0.5);
-      g.gain.setValueAtTime(0.22, t + 2.6);
-      g.gain.exponentialRampToValueAtTime(0.001, t + 4.0);
+      g.gain.linearRampToValueAtTime(peakGain, t + fadeIn);
+      g.gain.setValueAtTime(peakGain, t + holdEnd);
+      g.gain.exponentialRampToValueAtTime(0.001, t + duration);
 
       osc.connect(filter);
       filter.connect(g);
       g.connect(this.nodes.fx);
       lfo.start(t);
       osc.start(t);
-      lfo.stop(t + 4.2);
-      osc.stop(t + 4.2);
+      lfo.stop(stopTime);
+      osc.stop(stopTime);
     });
   }
 
