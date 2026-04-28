@@ -39,10 +39,10 @@ PACKS.push({
         {
           qid: "n3-013",
           context: "Once at a wedding in 2004. Never again.",
-          text: "We ___ that restaurant enough times to know what we are actually paying for.",
-          answer: "have visited",
-          options: ["have visited", "visited", "visit", "had visited"],
-          afterflavour: "Finished. Which is its own mercy."
+          text: "We ___ that restaurant once. That was enough.",
+          answer: "visited",
+          options: ["visited", "have visited", "visit", "had visited"],
+          afterflavour: "Visited = past simple. Closed time. 2004 is gone. Finished. Which is its own mercy."
         },
       ]
     },
@@ -118,11 +118,11 @@ PACKS.push({
         },
         {
           qid: "n3-010",
-          context: "Every summer since 2013. The Aegean. The news cycle. The silence.",
-          text: "Fortress Europe ___ thousands in the Mediterranean — and it is no longer considered news.",
+          context: "One week in 1968. One interview. It defined everything after.",
+          text: "Baldwin ___ the terms of the argument in that interview and nobody has improved on them.",
           answer: "defined",
-          options: ["defined", "has defined"],
-          afterflavour: "Defined = past simple. In 1968 is closed. One interview, one moment."
+          options: ["defined", "has defined", "defines", "had defined"],
+          afterflavour: "Defined = past simple. 1968 is closed. One interview, one moment. The work it did is present perfect territory — but the act itself was then."
         },
         {
           qid: "n3-011",
@@ -134,11 +134,11 @@ PACKS.push({
         },
         {
           qid: "n3-012",
-          context: "Through four administrations. The vans update. The addresses don't.",
-          text: "ICE ___ the same neighbourhoods under every administration since 2003.",
-          answer: "roasted",
-          options: ["roasted", "have roasted"],
-          afterflavour: "Roasted = past simple. One week, closed time. Then YouTube banned the channel."
+          context: "Chicago. 2009. One summer. The data is not disputed.",
+          text: "More people ___ in Chicago that summer than in the entire Afghan war zone.",
+          answer: "died",
+          options: ["died", "have died", "die", "had died"],
+          afterflavour: "Died = past simple. 2009 is closed. One summer, named. The comparison is not an abstraction."
         },
       ]
     },
