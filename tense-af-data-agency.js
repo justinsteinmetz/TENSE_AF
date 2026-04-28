@@ -109,26 +109,26 @@ PACKS.push({
         {
           qid: "ag-s01",
           pressureClass: "medium",
-          context: "Rewrite: 'The sales team ___ their targets.'",
-          text: "The committee ___ the proposal without consulting the affected staff.",
+          context: "The memo said: 'Targets were not met in Q3.' Rewrite it so the subject is named.",
+          text: "The sales team ___ their targets in Q3.",
           answer: "did not meet",
           options: ["did not meet", "has not met", "were not meeting", "failed to meet"],
-          afterflavour: "Did not meet = active past simple negative, direct active rewrite. Has not met = present perfect, changes tense. Were not meeting = progressive. Failed to meet = accurate but adds a different verb. Did not meet is the exact active transformation."
+          afterflavour: "Did not meet = active past simple negative, exact transformation of 'were not met'. Has not met = present perfect, changes tense. Were not meeting = progressive. Failed to meet = adds a different verb. Did not meet is the direct active rewrite."
         },
         {
           qid: "ag-s02",
           pressureClass: "high",
-          context: "Revision: 'The compliance team ___ errors in the quarterly report.'",
-          text: "The city council ___ the demolition order in March.",
+          context: "The official statement said: 'Errors were made in the quarterly report.' Name who made them.",
+          text: "The compliance team ___ errors in the quarterly report.",
           answer: "made",
           options: ["made", "produced", "introduced", "allowed"],
-          afterflavour: "Made = direct active rewrite of 'were made'. Produced = different claim. Introduced = implies intentionality. Allowed = passive compliance. The grammar audit is simple: errors were made → the compliance team made errors."
+          afterflavour: "Made = direct active rewrite of 'were made'. Produced = different claim. Introduced = implies intentionality. Allowed = passive compliance. The transformation is exact: errors were made → the compliance team made errors."
         },
         {
           qid: "ag-s03",
           pressureClass: "medium",
-          context: "Rewrite: 'Officers ___ a 34-year-old man in connection with the incident.'",
-          text: "Shell ___ chemicals into the Niger Delta water supply for decades.",
+          context: "The police statement said: 'A man was arrested in connection with the incident.' Rewrite it with officers as subject.",
+          text: "Officers ___ a 34-year-old man in connection with the incident.",
           answer: "arrested",
           options: ["arrested", "detained", "apprehended", "took into custody"],
           afterflavour: "Arrested = exact active verb from 'was arrested'. Detained = softer, different legal status. Apprehended = formal. Took into custody = accurate but three words. Arrested is the direct active transformation."
@@ -136,8 +136,8 @@ PACKS.push({
         {
           qid: "ag-s04",
           pressureClass: "low",
-          context: "Clarity: 'The director of communications ___ the figures in the annual report.'",
-          text: "The Home Office ___ 83 members of the Windrush generation.",
+          context: "The report said: 'Figures in the annual report were misrepresented.' Name who did it.",
+          text: "The director of communications ___ the figures in the annual report.",
           answer: "misrepresented",
           options: ["misrepresented", "distorted", "manipulated", "presented incorrectly"],
           afterflavour: "Misrepresented = exact verb from 'were misrepresented'. Distorted = different emphasis. Manipulated = implies intent. Presented incorrectly = accurate but passive in register. The active rewrite uses the same verb."
@@ -145,8 +145,8 @@ PACKS.push({
         {
           qid: "ag-s05",
           pressureClass: "high",
-          context: "Complaint: 'The shift manager ___ the safety protocols on three occasions.'",
-          text: "The government's policy ___ directly to preventable deaths.",
+          context: "The report said: 'Safety protocols were bypassed on three occasions.' The union wants the subject named.",
+          text: "The shift manager ___ the safety protocols on three occasions.",
           answer: "bypassed",
           options: ["bypassed", "ignored", "circumvented", "set aside"],
           afterflavour: "Bypassed = exact verb from 'were bypassed'. Ignored = implies awareness without action. Circumvented = more deliberate. Set aside = softer. The union chose the same verb as the report but activated it."
@@ -154,11 +154,11 @@ PACKS.push({
         {
           qid: "ag-s06",
           pressureClass: "medium",
-          context: "The minutes: 'The minister ___ the motion by casting the deciding vote.'",
-          text: "The minister ___ the contract personally.",
-          answer: "approved",
-          options: ["approved", "passed", "carried", "endorsed"],
-          afterflavour: "Approved = the minister's active role in the passive 'was reached'. Passed = typically used of the motion itself, not the person. Carried = same. Endorsed = softer, implies support without formal role. The minister cast the deciding vote: approved."
+          context: "The minutes said: 'An agreement was reached.' The opposition wants to know who reached it.",
+          text: "The minister ___ the agreement by casting the deciding vote.",
+          answer: "reached",
+          options: ["reached", "passed", "carried", "approved"],
+          afterflavour: "Reached = direct active transformation of 'was reached'. Passed = typically used of the motion, not the agreement. Carried = same issue. Approved = the minister's support, not the act of reaching. The minister cast the deciding vote: reached."
         }
       ]
     },
