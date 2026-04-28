@@ -62,20 +62,7 @@ PACKS.push({
       ]
     },
 
-    {
-      id: "cond-zero-first",
-      name: "Zero + First",
-      label: "Always true / real possibility",
-      rule: `<strong>Zero conditional</strong> (always true): <em>If you heat water, it boils.</em><br><strong>First conditional</strong> (real future): <em>If it rains tomorrow, we'll stay in.</em>`,
-      questions: [
-        
-        
-        
-        
-      ]
-    },
-
-    // ── ENTRY: Second ────────────────────────────────────────
+    // ── STRUCTURAL: Second ─── (entry second below is removed as duplicate)
     {
       id: "cond-second",
       name: "Second Conditional",
@@ -149,7 +136,7 @@ PACKS.push({
         { qid:"cond2-f05", pressureClass:"medium", context:"The dominant narrative is still dominant. The risk is real.", text:"If one story continues to dominate, perception ___ narrow .", answer: "will narrow", options: ["will narrow", "would narrow", "narrows", "has narrowed"], afterflavour:"Will narrow. Ongoing condition → projected outcome." },
         { qid:"cond2-f06", pressureClass:"medium", context:"The knowledge is available now. The choice is being made now.", text:"If knowledge is ignored now, innocence ___ persist as refusal.", answer: "will persist as refusal", options: ["will persist as refusal", "would persist", "persists", "has persisted"], afterflavour:"First conditional. Refusal is a live option. So is acknowledgement." },
         { qid:"cond2-f07", pressureClass:"medium", context:"History is being denied now. The effect is projected forward.", text:"If history is denied, it ___ continue shaping the present.", answer: "will continue shaping", options: ["will continue shaping", "would continue shaping", "continues shaping", "has continued shaping"], afterflavour:"Will continue. First conditional confirms the unbroken chain." },
-        { qid:"cond2-f08", pressureClass:"medium", context:"Interpretation is currently dominant. The warning is real.", text:"If interpretation keeps dominating, direct experience ___ become less legible.", answer: "will become impossible", options: ["will become impossible", "would become impossible", "becomes impossible", "has become impossible"], afterflavour:"Will become. The condition is ongoing. The result isn't certain — but it is real." }
+        { qid:"cond2-f08", pressureClass:"medium", context:"Interpretation is currently dominant. The warning is real.", text:"If interpretation keeps dominating, direct experience ___ become less legible.", answer: "will become less legible", options: ["will become less legible", "would become less legible", "becomes less legible", "has become less legible"], afterflavour:"Will become. The condition is ongoing. The result isn't certain — but it is real." }
       ]
     },
 
@@ -164,7 +151,7 @@ PACKS.push({
         { qid:"cond2-s02", pressureClass:"medium", context:"Imagining a system that requires justification.", text:"If systems required explanation, authority ___ less inevitable.", answer:"would feel", options:["would feel","will feel","would have felt","feels"], afterflavour:"Would feel. Hypothetical now. Not prediction — imagination." },
         { qid:"cond2-s03", pressureClass:"medium", context:"Hypothetical: people stop the performance.", text:"If people ___ performing belief, power would need to justify itself.", answer:"stopped", options:["stopped","stop","had stopped","would stop"], afterflavour:"Stopped — past simple. The hypothetical is in the present." },
         { qid:"cond2-s04", pressureClass:"medium", context:"Imagining knowledge being acknowledged now.", text:"If knowledge ___ acknowledged, innocence would not remain credible.", answer: "were acknowledged", options: ["were acknowledged", "was acknowledged", "are acknowledged", "had been acknowledged"], afterflavour:"Were — not was. Formal hypothetical. Were applies to all persons." },
-        { qid:"cond2-s05", pressureClass:"medium", context:"Imagining multiple stories in circulation now.", text:"If multiple stories circulated, perception ___ broader.", answer: "were acknowledged", options: ["were acknowledged", "was acknowledged", "are acknowledged", "had been acknowledged"], afterflavour:"Would be. Hypothetical present result." },
+        { qid:"cond2-s05", pressureClass:"medium", context:"Imagining multiple stories in circulation now.", text:"If multiple stories circulated, perception ___ broader.", answer: "would be", options: ["would be", "will be", "were", "had been"], afterflavour:"Would be broader. Hypothetical present result. Past simple in if-clause, would + base in result." },
         { qid:"cond2-s06", pressureClass:"high", context:"Hypothetical: institutions don't define knowledge.", text:"If institutions ___ define knowledge, truth would develop outside them.", answer:"didn't", options:["didn't", "didn't define", "don't define", "hadn't defined"], afterflavour:"Didn't define — past simple in if. Hypothetical present." },
         { qid:"cond2-s07", pressureClass:"high", context:"Imagining the suppression lifted. The history visible.", text:"If history ___ suppressed, its influence would still be felt.", answer:"weren't", options:["weren't","wasn't","hadn't been","isn't"], afterflavour:"Weren't — formal hypothetical. Were for all persons in second conditional." },
         { qid:"cond2-s08", pressureClass:"high", context:"Imagining systems changed. But the change hasn't happened.", text:"If systems ___ redesigned, would outcomes actually follow?", answer: "were redesigned", options: ["were redesigned", "was redesigned", "are redesigned", "had been redesigned"], afterflavour:"Were redesigned — past simple, hypothetical now." }
@@ -198,11 +185,11 @@ PACKS.push({
       questions: [
         { qid:"cond2-m01", pressureClass:"high", context:"Behaviour was not interrupted. The present is a result of that.", text:"If repetition had been interrupted earlier, power ___ so entrenched now.", answer:"wouldn't be", options:["wouldn't be","wouldn't have been","won't be","hadn't been"], afterflavour:"Past condition → present state. Wouldn't be — not wouldn't have been." },
         { qid:"cond2-m02", pressureClass:"high", context:"Systems weren't redesigned. We are living with the result.", text:"If systems had been redesigned, outcomes ___ diverge now.", answer: "would diverge", options: ["would diverge", "would have diverged", "will diverge", "diverge"], afterflavour:"Would diverge — present result of past condition. Would have = third conditional." },
-        { qid:"cond2-m03", pressureClass:"high", context:"History was suppressed. The present carries it.", text:"If history had not been denied, the present ___ structured this way.", answer: "would diverge", options: ["would diverge", "would have diverged", "will diverge", "diverge"], afterflavour:"Past condition → current structure. The present is the result." },
+        { qid:"cond2-m03", pressureClass:"high", context:"History was suppressed. The present carries it.", text:"If history had not been denied, the present ___ structured this way.", answer: "wouldn't be", options: ["wouldn't be", "wouldn't have been", "won't be", "isn't"], afterflavour:"Wouldn't be — present result of past condition. Wouldn't have been = third conditional only. The present is the consequence." },
         { qid:"cond2-m04", pressureClass:"high", context:"Knowledge was available and ignored. Innocence persists now.", text:"If knowledge had been acknowledged, innocence ___ credible today.", answer:"wouldn't be", options:["wouldn't be","wouldn't have been","won't be","hadn't been"], afterflavour:"Mixed. Past acknowledgement → present credibility. Today confirms the time frame." },
         { qid:"cond2-m05", pressureClass:"high", context:"Explanation was never required. Authority still feels inevitable.", text:"If systems had required explanation, authority ___ inevitable now.", answer:"wouldn't feel", options:["wouldn't feel","wouldn't have felt","won't feel","doesn't feel"], afterflavour:"Wouldn't feel — present state. Wouldn't have felt = third conditional only." },
         { qid:"cond2-m06", pressureClass:"high", context:"The performance continued. Power is still unchallenged.", text:"If people had stopped performing belief, power ___ need to justify itself now.", answer: "would need to justify itself", options: ["would need to justify itself", "would have needed to justify itself", "needs to justify itself", "will need to justify itself"], afterflavour:"Would need now — present consequence of past action." },
-        { qid:"cond2-m07", pressureClass:"high", context:"One story was dominant. Perception is still narrow.", text:"If multiple stories had been told, perception ___ broader now.", answer: "would need to justify itself", options: ["would need to justify itself", "would have needed to justify itself", "needs to justify itself", "will need to justify itself"], afterflavour:"Would be broader now. Past condition → present state. Now is the signal." },
+        { qid:"cond2-m07", pressureClass:"high", context:"One story was dominant. Perception is still narrow.", text:"If multiple stories had been told, perception ___ broader now.", answer: "would be", options: ["would be", "would have been", "will be", "is"], afterflavour:"Would be broader now. Mixed conditional: past cause, present result. Now is the signal." },
         { qid:"cond2-m08", pressureClass:"high", context:"Truth followed institutional structure. It still does.", text:"If knowledge had formed differently, truth ___ operate differently now.", answer: "would operate differently", options: ["would operate differently", "would have operated differently", "operates differently", "will operate differently"], afterflavour:"Would operate now. Mixed. Past formation → present operation." }
       ]
     }
